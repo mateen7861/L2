@@ -1,0 +1,11 @@
+* {
+  background-color: grey;
+}
+h1 {
+  text-align: center;
+  font-style: italic;
+  color: aliceblue;
+}
+button {
+  background-color: honeydew;
+}
