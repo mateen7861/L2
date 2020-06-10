@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./myStyle.css";
-import Piaic from "./Piaic";
+import New from "./New";
 export function App() {
   let [count, setCount] = useState(0);
   let [isDay, setDay] = useState(true);
@@ -30,7 +30,7 @@ export function App() {
       >
         Change isDay
       </button>
-      <Piaic count={count}></Piaic>
+      <New count={count}></New>
     </div>
   );
 }
