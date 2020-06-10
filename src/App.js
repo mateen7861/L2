@@ -1,29 +1,36 @@
 import React, { useState } from "react";
-const App = () => {
-  let [name, setname] = useState("mateen");
-  let [age, setAge] = useState(1);
-  return (
-    <div>
-      <h1>Hi {name}</h1>
+import "./myStyle.css";
+import Piaic from "./Piaic";
+export function App() {
+  let [count, setCount] = useState(0);
+  let [isDay, setDay] = useState(true);
 
-      <h1>AGE = {age}</h1>
+  return (
+    <div className={`Box${isDay ? 1 : 2}`}>
+      <h1>Hello from Mateen Mustafa</h1>
+      <h1>Count: {count}</h1>
       <button
         onClick={() => {
-          setAge(++age);
+          setCount(++count);
         }}
       >
-        I.A
+        Increment
       </button>
-      <br></br>
-      <br></br>
       <button
         onClick={() => {
-          setAge(--age);
+          setCount(--count);
         }}
       >
-        D.A
+        Decrement
       </button>
+      <button
+        onClick={() => {
+          setDay(!isDay);
+        }}
+      >
+        Change isDay
+      </button>
+      <Piaic count={count}></Piaic>
     </div>
   );
-};
-export default App;
+}

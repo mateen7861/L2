@@ -1,11 +1,12 @@
 * {
-  background-color: grey;
-}
-h1 {
-  text-align: center;
-  font-style: italic;
   color: aliceblue;
 }
 button {
-  background-color: honeydew;
+  background-color: grey;
+}
+.Box1 {
+  background-color: aqua;
+}
+.Box2 {
+  background-color: black;
 }

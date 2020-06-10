@@ -1,16 +1,6 @@
 import React, { Component } from "react";
-
-class Piaic extends Component {
-  state = {
-    name: "mateen",
-  };
-
-  render() {
-    return (
-      <div>
-        <h1>Hi {this.state.name}</h1>
-      </div>
-    );
-  }
-}
+import "./myStyle.css";
+const Piaic = (props) => {
+  return <div>New count={props.count}</div>;
+};
 export default Piaic;
